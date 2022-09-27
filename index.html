@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="main-box max-w-6xl m-auto flex justify-between items-center">
+            <div class="logo">
+                <img src="./img/logo.png" alt="" class="w-24">
+            </div>
+            <div class="menu" id="myNav">
+                <div class="close-menu text-xl text-center bg-gray-400 p-1 hidden closebtn" onclick="closeNav()">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <ul>
+                    <li class="inline-block"><a href="#" class="block text-md text-white px-3 py-2 hover:bg-yellow-800 rounded">HOME</a></li>
+                    <li class="inline-block"><a href="#" class="block text-md text-white px-3 py-2 hover:bg-yellow-800 rounded">PRODUCTS</a></li>
+                    <li class="inline-block"><a href="#" class="block text-md text-white px-3 py-2 hover:bg-yellow-800 rounded">ABOUT US</a></li>
+                    <li class="inline-block"><a href="#" class="block text-md text-white px-3 py-2 hover:bg-yellow-800 rounded">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <ul>
+                    <li class="inline-block"><i class="block text-lg text-white px-3 py-2 hover:text-gray-500 fa-solid fa-cart-shopping"></i></li>
+                    <li class="inline-block"><i class="block text-lg text-white px-3 py-2 hover:text-gray-500 fa fa-search"></i></li>
+                    <li class="inline-block open-menu hidden" onclick="openNav()"><i class="block text-lg text-white px-3 py-2 hover:text-gray-500 fa fa-bars"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="bg">
+        <div class="banner max-w-6xl m-auto flex justify-between items-center">
+            <div class="text-detail w-1/2">
+                <h1 class="text-yellow-500 text-6xl font-bold">START YOUR DAY WITH COFFEE</h1>
+                <p class="text-white text-lg py-5">The more coffee you taste, the more you’ll discover general preferences for broad categories of flavours, such as fruit, nuts or spices. You can also try to develop your palate a bit: when you smell and taste new foods, try to clock the nuances of flavour. When you try new coffee, taste it thoughtfully. Smell it.</p>
+                <div class="btn text-white bg-yellow-700 rounded text-center px-5 py-2 w-32">
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="hero w-1/2">
+                <img src="./img/main.png" alt="">
+            </div>
+        </div>
+        <div class="product bg-white ">
+            <div class="main-box max-w-6xl m-auto">
+                <h1 class="text-center text-3xl font-bold py-10 text-gray-700">OUR POPULAR PRODUCTS</h1>
+                <div class="box-product grid grid-cols-12 gap-5">
+                    <div class="out-box shadow mx-5 col-span-4 rounded">
+                        <div class="box shadow p-2 rounded">
+                            <img src="./img/p1.png" alt="" class="m-auto w-64 h-64">
+                            <h6 class="text-center text-md font-bold">ARABICA COFFEE</h6>
+                            <div class="price flex justify-between items-center pt-3">
+                                <p class="text-md font-bold text-yellow-600">$ 25 US</p>
+                                <div class="text-center btn border-2 border-yellow-500 rounded p-1 text-sm hover:bg-yellow-600 hover:text-white">
+                                    <a href="#">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out-box shadow mx-5 col-span-4 rounded">
+                        <div class="box shadow p-2 rounded">
+                            <img src="./img/p2.png" alt="" class="m-auto w-64 h-64">
+                            <h6 class="text-center text-md font-bold">BOTERO COFFEE</h6>
+                            <div class="price flex justify-between items-center pt-3">
+                                <p class="text-md font-bold text-yellow-600">$ 25 US</p>
+                                <div class="text-center btn border-2 border-yellow-500 rounded p-1 text-sm hover:bg-yellow-600 hover:text-white">
+                                    <a href="#">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out-box shadow mx-5 col-span-4 rounded">
+                        <div class="box shadow p-2 rounded">
+                            <img src="./img/p3.png" alt="" class="m-auto w-64 h-64">
+                            <h6 class="text-center text-md font-bold">PATCH ROOST COFFEE</h6>
+                            <div class="price flex justify-between items-center pt-3">
+                                <p class="text-md font-bold text-yellow-600">$ 25 US</p>
+                                <div class="text-center btn border-2 border-yellow-500 rounded p-1 text-sm hover:bg-yellow-600 hover:text-white">
+                                    <a href="#">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out-box shadow mx-5 col-span-4 rounded">
+                        <div class="box shadow p-2 rounded">
+                            <img src="./img/p4.png" alt="" class="m-auto w-64 h-64">
+                            <h6 class="text-center text-md font-bold">ROOST COFFEE</h6>
+                            <div class="price flex justify-between items-center pt-3">
+                                <p class="text-md font-bold text-yellow-600">$ 25 US</p>
+                                <div class="text-center btn border-2 border-yellow-500 rounded p-1 text-sm hover:bg-yellow-600 hover:text-white">
+                                    <a href="#">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out-box shadow mx-5 col-span-4 rounded">
+                        <div class="box shadow p-2 rounded">
+                            <img src="./img/p5.png" alt="" class="m-auto w-64 h-64">
+                            <h6 class="text-center text-md font-bold">SACRED COFFEE</h6>
+                            <div class="price flex justify-between items-center pt-3">
+                                <p class="text-md font-bold text-yellow-600">$ 25 US</p>
+                                <div class="text-center btn border-2 border-yellow-500 rounded p-1 text-sm hover:bg-yellow-600 hover:text-white">
+                                    <a href="#">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out-box shadow mx-5 col-span-4 rounded">
+                        <div class="box shadow p-2 rounded">
+                            <img src="./img/p6.png" alt="" class="m-auto w-64 h-64">
+                            <h6 class="text-center text-md font-bold">PRESTO COFFEE</h6>
+                            <div class="price flex justify-between items-center pt-3">
+                                <p class="text-md font-bold text-yellow-600">$ 25 US</p>
+                                <div class="text-center btn border-2 border-yellow-500 rounded p-1 text-sm hover:bg-yellow-600 hover:text-white">
+                                    <a href="#">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us bg-white">
+            <div class="main-box max-w-6xl m-auto">
+                <h1 class="text-center text-3xl font-bold py-10 text-gray-700">ABOUT US</h1>
+                <div class="box-about-us flex justify-between">
+                    <div class="img w-1/2 p-5">
+                        <img src="./img/about.jpg" alt="" class="full rounded-xl">
+                    </div>
+                    <div class="text-about w-1/2 p-3">
+                        <p class="text-lg">There are people who can’t start their day without having a freshly brewed cup of coffee. They love coffee so much that sometimes they call themselves “coffee addicts”. And we understand that all too well. However, drinking your daily cup(s) of coffee isn’t necessarily a bad habit. On the contrary, it’s proven to be healthy, scientists say. Your daily morning coffee provides you with more than just an energy boost. It’s also shown to protect us against Type 2 diabetes and liver diseases as well as lowering the risks of heart failure. Besides the effect on our health, here are some of the more interesting facts about coffee.</p>
+                        <div class="text-white bg-yellow-700 rounded text-center px-5 py-2 w-32 mt-5">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customer max-w-6xl m-auto mt-5">
+            <h1 class="text-center text-3xl font-bold py-10 text-white">OUR CUSTOMER'S</h1>
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-4 text-center shadow rounded">
+                    <div class="box shadow p-2 bg-white">
+                        <img src="./img/rev1.jpg" alt="" class="rounded-full w-20 h-20 m-auto object-cover">
+                        <p class="py-2">This coffee aficionado loves what you do – and maybe likes to talk to you about it while a line forms behind them. You’re all for chatting up customers about your new blend, but you’re also hyper aware of those less enthusiastic customers who just want their coffee, now.</p>
+                        <ul>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-4 text-center shadow rounded">
+                    <div class="box shadow p-2 bg-white">
+                        <img src="./img/rev2.jpg" alt="" class="rounded-full w-20 h-20 m-auto object-cover">
+                        <p class="py-2">This coffee aficionado loves what you do – and maybe likes to talk to you about it while a line forms behind them. You’re all for chatting up customers about your new blend, but you’re also hyper aware of those less enthusiastic customers who just want their coffee, now.</p>
+                        <ul>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-4 text-center shadow rounded">
+                    <div class="box shadow p-2 bg-white">
+                        <img src="./img/rev3.jpg" alt="" class="rounded-full w-20 h-20 m-auto object-cover">
+                        <p class="py-2">This coffee aficionado loves what you do – and maybe likes to talk to you about it while a line forms behind them. You’re all for chatting up customers about your new blend, but you’re also hyper aware of those less enthusiastic customers who just want their coffee, now.</p>
+                        <ul>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="text-yellow-500 fa fa-star"></i></li>
+                            <li class="inline-block"><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-5 bg-gray-600">
+            <div class="max-w-6xl m-auto grid grid-cols-12 gap-3">
+                <div class="col-span-3 py-3">
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="" class="w-24">
+                    </div>
+                    <ul class="mt-5">
+                        <li class="inline-block"><a href="#"><i class="bg-gray-400 p-3 rounded fab fa-facebook"></i></a></li>
+                        <li class="inline-block"><a href="#"><i class="bg-gray-400 p-3 rounded fab fa-twitter"></i></a></li>
+                        <li class="inline-block"><a href="#"><i class="bg-gray-400 p-3 rounded fab fa-tiktok"></i></a></li>
+                        <li class="inline-block"><a href="#"><i class="bg-gray-400 p-3 rounded fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 py-3">
+                    <h6 class="text-white font-bold">Support</h6>
+                    <ul class="mt-5">
+                        <li class="py-1"><a href="#" class="text-md text-white">Products</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white">Help & Support</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white">Return Policy</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 py-3">
+                    <h6 class="text-white font-bold">View Guides</h6>
+                    <ul class="mt-5">
+                        <li class="py-1"><a href="#" class="text-md text-white">Features</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white">Careers</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white">Blog Post</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white">Our Branches</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-3 py-3">
+                    <h6 class="text-white font-bold">Contact</h6>
+                    <ul class="mt-5">
+                        <li class="py-1"><a href="#" class="text-md text-white"><i class="fa-solid fa-location-dot"></i>&nbsp;6A Chroy ChongVa</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white"><i class="fa-solid fa-phone"></i>&nbsp;(+855)95 741 5376</a></li>
+                        <li class="py-1"><a href="#" class="text-md text-white"><i class="fa-solid fa-envelope"></i>&nbsp;coffeeshop@me.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
